@@ -1,0 +1,15 @@
+{
+    "name": "vendor/casa-apostas",
+    "type": "project",
+    "minimum-stability": "dev",
+    "description": "",
+    "require": {},
+    "autoload":{
+        "psr-4":{
+            "Ieleny\\casaApostas\\":"src/"
+        }
+    }
+}
+
+
+
