@@ -4,7 +4,6 @@ namespace Ieleny\casaApostas\Model;
 
 class Usuario
 {
-
     private $usuario;
 
     public function getUsuario()
@@ -16,8 +15,5 @@ class Usuario
     {
         return $this->usuario = $usuario;
     }
-
-
-
 
 }

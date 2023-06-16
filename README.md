@@ -27,7 +27,36 @@ Quinto Passo:
 Sexto Passo:
 	Refatore seu código. E comece tudo de novo.
 
-	
+# Executar comandos docker
 
+Entrar na pasta docker e executar
+
+```
+	docker compose up
+```
+
+# Executando o php-unit no docker
+
+Comando para saber qual os container executados
+```
+	docker ps
+```
+
+Comando para entrar no bash da imagem do docker-php-fpm
+```
+	docker exec -it <CONTAINER-ID> bash
+```
+
+Quando acessar o bash, o servidor estará na pasta 'var/www/html'. 
+
+Assim poderá installar o composer
+```
+	composer install
+```
+	
+Para executar os testes no php unit é preciso executar o seguinte comando:
+```
+	./vendor/bin/phpunit --verbose src/Tests/UsuarioTeste.php
+```
 
 
