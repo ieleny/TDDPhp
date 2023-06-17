@@ -1,0 +1,47 @@
+
+*::selection {
+  color: black;
+  background: tomato;
+}
+
+.form-control {
+  transition: .25s border ease-in-out;
+  border-radius: 0 !important;
+  outline: none !important;
+  box-shadow: none !important;
+  background: transparent;
+  color: black;
+  border: 0;
+  border-bottom: 2px solid #444;
+  font-size: 30px;
+}
+
+.form-control:focus {
+  border-bottom-color: #CC2C21;
+}
+
+.form-control:not(.touched)+.floater:before {
+  display: block;
+  position: absolute;
+  top: 0;
+  font-size: 30px;
+  color: #666;
+  pointer-events: none;
+  transition: .25s all ease-in-out;
+}
+
+.form-control.touched+.floater:before,
+#username:focus+.floater:before,
+#username:not(:placeholder-shown)+.floater:before
+{
+  position: absolute;
+  top: -20px;
+  font-size: 30px;
+  color: #FFF;
+}
+
+.link,
+.link:hover {
+  color: #CC2C21;
+  text-decoration: none;
+}
