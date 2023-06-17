@@ -35,6 +35,25 @@ Entrar na pasta docker e executar
 	docker compose up
 ```
 
+# Atualizar o autoload
+
+Comando para saber qual os container executados
+```
+	docker ps
+```
+
+Comando para entrar no bash da imagem do docker-php-fpm
+```
+	docker exec -it <CONTAINER-ID> bash
+```
+
+Quando acessar o bash, o servidor estará na pasta 'var/app/html'. 
+
+assim poderá atualizar o autoload:
+```
+composer dump-autoload
+```
+
 # Executando o php-unit no docker
 
 Comando para saber qual os container executados
