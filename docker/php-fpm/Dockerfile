@@ -223,10 +223,10 @@ RUN if [ ${INSTALL_INTL} = true ]; then \
 RUN rm -rf /var/lib/apt/lists/*
 
 # Permissions
-RUN chown -R root:www-data /var/www/html
-RUN chmod u+rwx,g+rx,o+rx /var/www/html
-RUN find /var/www/html -type d -exec chmod u+rwx,g+rx,o+rx {} +
-RUN find /var/www/html -type f -exec chmod u+rw,g+rw,o+r {} +
+RUN chown -R root:www-data /var/app/html
+RUN chmod u+rwx,g+rx,o+rx /var/app/html
+RUN find /var/app/html -type d -exec chmod u+rwx,g+rx,o+rx {} +
+RUN find /var/app/html -type f -exec chmod u+rw,g+rw,o+r {} +
 
 CMD ["php-fpm"]
 

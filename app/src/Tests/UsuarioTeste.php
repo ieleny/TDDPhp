@@ -2,7 +2,7 @@
 
 namespace Ieleny\casaApostas\Tests;
 
-use Ieleny\casaApostas\Model\Usuario as Usuario;
+use Ieleny\casaApostas\Domain\Entities\Usuario as Usuario;
 use PHPUnit\Framework\TestCase;
 
 class UsuarioTeste extends TestCase

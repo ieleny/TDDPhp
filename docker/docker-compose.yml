@@ -7,7 +7,7 @@ services:
       context: nginx
       dockerfile: Dockerfile
     volumes:
-      - ${APPLICATION}:/var/www/html
+      - ${APPLICATION}:/var/app/html
       - ${NGINX_HOST_LOG_PATH}:/var/log/nginx
       - ${NGINX_SITES_PATH}:/etc/nginx/conf.d
     ports:
@@ -46,7 +46,7 @@ services:
     expose:
       - "9000"
     volumes:
-      - ${APPLICATION}:/var/www/html
+      - ${APPLICATION}:/var/app/html
       - ${APPLICATION}:/usr/local/etc/php/conf.d/custom.ini
     environment:
       - MYSQL_HOST=${MYSQL_HOST}

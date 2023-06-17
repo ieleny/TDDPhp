@@ -1,6 +1,6 @@
 <?php
 
-namespace Ieleny\casaApostas\Model;
+namespace Src\Leilao\Domain\Entities;
 
 class Usuario
 {

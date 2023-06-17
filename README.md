@@ -47,7 +47,7 @@ Comando para entrar no bash da imagem do docker-php-fpm
 	docker exec -it <CONTAINER-ID> bash
 ```
 
-Quando acessar o bash, o servidor estará na pasta 'var/www/html'. 
+Quando acessar o bash, o servidor estará na pasta 'var/app/html'. 
 
 Assim poderá installar o composer
 ```
