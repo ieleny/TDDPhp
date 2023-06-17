@@ -2,21 +2,31 @@
 <html lang="pt-br">
 
 <head>
-    <title>Leilao</title>
+    <title>Leilao da Leila</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="public/assets/Leilao.css" />
+    <link rel="stylesheet" type="text/css" href="public/assets/css/Leilao.css" />
+    <link rel="stylesheet" type="text/css" href="public/assets/css/Input.css" />
+    <link rel="stylesheet" type="text/css" href="public/assets/css/Button.css" />
 </head>
 
 <body>
     <div class="topnav">
         <h2 class="topnav text">
-            Leilão
+            Leilão da Leila
         </h2>
     </div>
     <div class="content">
-        <h2> Adicione o seu nome:</h2>
-        <h2> Valor máximo:</h2>
+        <form>
+            <div class="bloco">
+                <input placeholder="Usuario" id="username" class="form-control">
+                <div class="floater"></div>
+            </div>
+
+            <div class="bloco">
+                <button class="glow-on-hover" type="submit">Acessar o leilão da Leila</button>
+            </div>
+        </form>
     </div>
     <div class="footer">
         <p>Desenvolvido por Ieleny</p>
